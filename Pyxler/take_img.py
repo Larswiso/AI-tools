@@ -24,7 +24,7 @@ dir_list = os.listdir(path)
 try:
     last_img = dir_list[-1]
     start_index = int(''.join([n for n in last_img if n.isdigit()])) + 1
-except IndexError:
+except:
     start_index = 0
 
 print("It starts in {} seconds.".format(time_before_start))
